@@ -8,7 +8,8 @@
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
           <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><a href="mailto:{{ site.email1 }}">{{ site.email1 }}</a></li>
+          <li><a href="mailto:{{ site.email2 }}">{{ site.email2 }}</a></li>
         </ul>
       </div>
 
@@ -28,7 +29,29 @@
           </li>
           {% endif %}
 
-          {% if site.twitter_username %}
+		  {% if site.zhihu_username %}
+          <li>
+            <a href="https://zhihu.com/people/{{ site.zhihu_username }}">
+              <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1306751640,1705697792&fm=58">
+			  
+              </span>
+
+              <span class="username">{{ site.zhihu_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+		  <li>
+		    <a href="http://www.douban.com/people/82886073/">
+              <img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=1856471644,711356429&fm=58">
+			  
+              </span>
+
+              <span class="username">SpaceQ</span>
+            </a>
+          </li>
+
+		  {% if false and site.twitter_username %}
           <li>
             <a href="https://twitter.com/{{ site.twitter_username }}">
               <span class="icon  icon--twitter">
@@ -47,6 +70,18 @@
 
       <div class="footer-col  footer-col-3">
         <p class="text">{{ site.description }}</p>
+		<!--ul class="social-media-list">
+          <li>
+		    <a href="https://www.facebook.com/prclyw">
+              <img src="https://www.facebook.com/favicon.ico">
+			  
+              </span>
+
+              <span class="username">prclyw</span>
+            </a>
+          </li>
+		</ul>
+
       </div>
     </div>
 
